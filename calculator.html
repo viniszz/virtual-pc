@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="images/flavicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <div id="desktop">
+        <div class="square2">
+            <h1>Calculadora</h1>
+            <p onclick="closeConfig()">X</p>
+            <div class="visor">
+                <div id="resultado">0</div>
+            </div>
+            <div id="buttons">
+                <input type="button" value="1" id="button1" onclick="insert1()">
+                <input type="button" value="2" id="button2" onclick="insert2()">
+                <input type="button" value="3" id="button3" onclick="insert3()">
+                <input type="button" value="4" id="button4" onclick="insert4()">
+                <input type="button" value="5" id="button5" onclick="insert5()">
+                <input type="button" value="6" id="button6" onclick="insert6()">
+                <input type="button" value="7" id="button7" onclick="insert7()">
+                <input type="button" value="8" id="button8" onclick="insert8()">
+                <input type="button" value="9" id="button9" onclick="insert9()">
+                <input type="button" value="0" id="button0" onclick="insert0()">
+                <input type="button" value="+" id="buttonmais" onclick="insertMais()">
+                <input type="button" value="-" id="buttonmenos" onclick="insertMenos()">
+                <input type="button" value="=" id="calcular" onclick="calcular()">
+                <input type="button" value="C" id="limpar" onclick="limpar()">
+            </div>            
+        </div>
+        <div id="icons">
+            <img src="images/config.png" class="icons config" alt="" onclick="openConfig()">
+            <img src="images/calculator.png" class="icons calculator" alt="" onclick="openCalculator()">
+            <img src="images/dino.webp" class="icons calculator" alt="" onclick="startDino()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="images/flavicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <div id="desktop">
+        <div class="square">
+            <div id="optionsWallpers">
+                <img src="images/wallpaper1.png" alt="" class="wallpapers wp1" onclick="setWallpaper1()">
+                <img src="images/wallpaper2.png" alt="" class="wallpapers wp2" onclick="setWallpaper2()">
+                <img src="images/wallpaper3.png" alt="" class="wallpapers wp3" onclick="setWallpaper3()">
+            </div>
+            <h1>Selecione o Wallpaper</h1>
+            <p onclick="closeConfig()">X</p>
+        </div>
+        <div id="icons">
+            <img src="images/config.png" class="icons config" alt="" onclick="openConfig()">
+            <img src="images/calculator.png" class="icons calculator" alt="" onclick="openCalculator()">
+            <img src="images/dino.webp" class="icons calculator" alt="" onclick="startDino()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
